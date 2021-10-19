@@ -55,3 +55,24 @@ footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
+
+.footer-box {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.download {
+    padding: 5px 10px;
+    background-color: #0bc25c;
+    border-radius: 3px;
+    margin: 15px;
+    color: white;
+    margin-bottom: 50px !important;
+    text-decoration: none;
+
+}
