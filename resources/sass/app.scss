@@ -1,5 +1,7 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Nunito&family=Open+Sans&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 
 // Variables
 @import 'variables';
@@ -21,6 +23,10 @@
     border-radius: 0.25rem;
 }
 
+.container {
+
+}
+
 .breadcrumb>li {
     display: inline-block;
 }
@@ -29,4 +35,23 @@
     padding: 0 5px;
     color: #ccc;
     content: "/\00a0";
+}
+
+footer {
+    position: relative;
+    //float: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+    //background-color: #2c4966;
+    background-color: #343a40 !important;
+    color: white;
+}
+
+.thick-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
 }

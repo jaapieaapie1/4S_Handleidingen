@@ -10,9 +10,9 @@
 @include('includes.navbar')
 
 <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
 
-        <div class="col-md-8">
+        <div class="col-sm-8">
             @include('includes.header')
 
             <ul class="breadcrumb">
@@ -36,14 +36,14 @@
 
         </div>
 
-        <div class="row">
-            @include('includes.footer')
-        </div>
+
 
     </div>
 
 
 </div>
+@include('includes.footer')
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
