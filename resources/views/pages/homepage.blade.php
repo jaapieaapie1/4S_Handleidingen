@@ -25,7 +25,7 @@
 
     <div class="container">
         <!-- Example row of columns -->
-        <div class="row">
+
 
             @foreach($brands->chunk($chunk_size) as $chunk)
                 <div class="col-md-4">
@@ -56,8 +56,15 @@
                 ?>
             @endforeach
 
+        <div class="row">
+            <h4>Meest populair</h4>
+            <ul>
+                @foreach($populars as $type)
+                    <li><a href="/{{ $type->brand->id }}/{{ $type->brand->name_url_encoded }}/{{ $type->id }}/{{ $type->name_url_encoded }}"> {{ $type->name }}</a></li>
+                @endforeach
+            </ul>
         </div>
-
     </div>
+
 
 @endsection

@@ -14,9 +14,12 @@ class BrandController extends Controller
         $brand = Brand::findOrFail($brand_id);
         $types = Type::where('brand_id', $brand_id)->orderBy('name')->get();
 
+        $populars = Type::query()->where("brand_id", "=", $brand_id)->orderBy("visits")->limit(5)->get()->all();
+
         return view('pages/type_list', [
             "types"=>$types,
-            "brand"=>$brand
+            "brand"=>$brand,
+            "populars"=>$populars,
         ]);
 
     }

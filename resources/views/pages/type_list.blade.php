@@ -11,6 +11,12 @@
 <p>{{ __('introduction_texts.type_list', ['brand'=>$brand->name]) }}</p>
 
     <div class="container">
+        <h4>Meest populair</h4>
+        <ul>
+            @foreach($populars as $type)
+                <li><a href="/{{ $type->brand->id }}/{{ $type->brand->name_url_encoded }}/{{ $type->id }}/{{ $type->name_url_encoded }}"> {{ $type->name }}</a></li>
+            @endforeach
+        </ul>
 		<ul>
 		@foreach($types as $type)
 			<li>
