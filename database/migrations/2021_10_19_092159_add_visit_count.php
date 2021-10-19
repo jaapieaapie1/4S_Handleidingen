@@ -13,7 +13,7 @@ class AddVisitCount extends Migration
      */
     public function up()
     {
-        Schema::table("manuals", function (Blueprint $table) {
+        Schema::table('types', function (Blueprint $table) {
             $table->integer("visits")->default(0);
         });
     }
@@ -25,7 +25,7 @@ class AddVisitCount extends Migration
      */
     public function down()
     {
-        Schema::table("manuals", function (Blueprint $table) {
+        Schema::table('types', function (Blueprint $table) {
             $table->dropColumn("visits");
         });
     }
